@@ -14,6 +14,7 @@
 <body>
     <div class="table-responsive">
         <table class="table table-bordered">
+            <a href="#!addblog">Add Blog</a>
             <thead>
                 <tr>
                     <th>Title</th>
@@ -30,8 +31,10 @@
                     <td>{{ data.date }}</td>
                     <td>{{ data.short }}</td>
                     <td>{{ data.long }}</td>
-                    <td><button class="btn btn-danger" ng-click="delete($index)">Delete</button></td>
-                    <td><button class="btn btn-primary" ng-click="view($index)">View</button></td>
+                    
+                    <td><button class="btn btn-primary" ng-click="redirectToEdit($index)">Edit✎</button></td>
+                    <td><button class="btn btn-danger" ng-click="delete($index)">Delete🗑️</button></td>
+
                 </tr>
             </tbody>
         </table>

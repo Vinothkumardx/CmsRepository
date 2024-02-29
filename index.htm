@@ -22,7 +22,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      background-color: #f8f9fa;
+      background-color: #cccccc;
       padding-top: 60px;
     }
     /* Sidebar links */
@@ -30,11 +30,16 @@
       padding: 10px;
       text-decoration: none;
       display: block;
+     
     }
     /* Main content area */
     .content {
       margin-left: 250px;
       padding: 20px;
+      
+    }
+    .bg-light{
+      background-color: black !important;
     }
   </style>
 </head>
@@ -46,15 +51,17 @@
 
   <!-- Sidebar -->
   <div class="sidebar">
-    <a href="#!firstmsg">Add Blog</a>
-    <a href="#!secondmsg">Blog list</a>
-    <a href="#!thirdmsg">Thirdmsg</a>
+    <a href="#!usermsg">User 🤵</a>
+    <a href="#!blog">Blog 📝</a>
+    
   </div>
 
   <!-- Main content area -->
   <div class="content" ng-view>
 
-   
+   <div>
+    
+   </div>
     
   </div>
 
