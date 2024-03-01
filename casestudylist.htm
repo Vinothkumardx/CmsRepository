@@ -9,18 +9,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
- 
-    <script src="script.js"></script>
-    
+    <script src="casestudyscript.js"></script>
 </head>
 <body>
     <div class="table-responsive">
-        <table class="table table-bordered=1"> 
-                <a href="#!addblog">Add New Blog</a>
+        <table class="table table-bordered=1">
+            <a href="#!addcasestudy">Add New casestudy</a>
             <thead>
                 <tr>
-                    <th>Title</th>
+                    <th>Heading</th>
                     <th>Author Name</th>
                     <th>Date</th>
                     <th>Short Description</th>
@@ -30,12 +27,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="data in formdataarray">
-                    <td>{{ data.title }}</td>
-                    <td>{{ data.name }}</td>
-                    <td>{{ data.date }}</td>
-                    <td>{{ data.short }}</td>
-                    <td>{{ data.long }}</td>
+                <tr ng-repeat="datasrc in formdataarray">
+                    <td>{{ datasrc.title }}</td>
+                    <td>{{ datasrc.name }}</td>
+                    <td>{{ datasrc.date }}</td>
+                    <td>{{ datasrc.short }}</td>
+                    <td>{{ datasrc.long }}</td>
                     
                     <td><button class="btn btn-primary" ng-click="redirectToEdit($index)">Edit✎</button></td>
                     <td><button class="btn btn-danger" ng-click="delete($index)">Delete🗑️</button></td>

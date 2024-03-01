@@ -5,33 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>content</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   
- 
-    <script src="script.js"></script>
+    <script src="casestudyscript.js"></script>
 </head>
 <body>
     <div class="container">
       <form name="myForm">
         <div class="form-group col-md-3">
-            <h1 style="color: red;">Blog Details</h1>
-            <label>Title*</label>
-            <input type="text" class="form-control" placeholder="Enter Title" ng-model="formdata.title" required>
+            <h1 style="color: red;">Casestudy Details</h1>
+            <label>Heading*</label>
+            <input type="text" class="form-control" placeholder="Enter Title" ng-model="caseStudyFormData.title" required>
             <span style="color: red" ng-show="myForm.title.$error.required && myForm.title.$dirty">Title is required</span>
         </div>
         <div class="form-group col-md-3" >
             <label>Author Name*</label>
-            <input type="text" class="form-control" placeholder="Enter Author Name" ng-model="formdata.name" required>
+            <input type="text" class="form-control" placeholder="Enter Author Name" ng-model="caseStudyFormData.name" required>
             <span style="color: red" ng-show="myForm.name.$error.required && myForm.name.$dirty">Name is required</span>
         </div>
         <div class="form-group col-md-3">
             <label>Date*</label>
-            <input datepicker type="datetime-local" class="form-control" placeholder="Enter Date" ng-model="formdata.date" required>
+            <input datepicker type="datetime-local" class="form-control" placeholder="Enter Date" ng-model="caseStudyFormData.date" required>
             <span style="color: red" ng-show="myForm.date.$error.required && myForm.date.$dirty">Date is required</span>
         </div>
        
@@ -39,7 +35,7 @@
         <div class="row">
             <div class="form-group col-md-6">
                 <label>shortDescription*</label>
-                <textarea class="form-control" placeholder="Enter shortDescription" ng-model="formdata.short" required></textarea>
+                <textarea class="form-control" placeholder="Enter shortDescription" ng-model="caseStudyFormData.short" required></textarea>
                 <span style="color: red" ng-show="myForm.short.$error.required && myForm.short.$dirty">shortDescription is required</span>
             </div>
         </div>
@@ -47,7 +43,7 @@
         <div class="row">
             <div class="form-group col-md-6">
                 <label>LongDescription*</label>
-                <textarea class="form-control" placeholder="Enter LongDescription" ng-model="formdata.long" required></textarea>
+                <textarea class="form-control" placeholder="Enter LongDescription" ng-model="caseStudyFormData.long" required></textarea>
                 <span style="color: red" ng-show="myForm.long.$error.required && myForm.long.$dirty">LongDescription is required</span>
 
             </div>
