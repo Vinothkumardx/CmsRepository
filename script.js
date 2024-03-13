@@ -2,10 +2,10 @@ var app = angular.module('myapp', ['ngRoute']);
 
 app.config(function($routeProvider) {
     $routeProvider.when('/blog', {
-        templateUrl: 'red.htm',
+        templateUrl: 'bloglist.htm',
         controller: 'Tablecontroller'
     }).when('/addblog', {
-        templateUrl: 'route.htm',
+        templateUrl: 'blog.htm',
         controller: 'myctrl'
     })
     .when('/usermsg', {
